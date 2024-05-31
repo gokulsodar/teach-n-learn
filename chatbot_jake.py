@@ -34,7 +34,7 @@ st.markdown(css_code, unsafe_allow_html=True)
 
 
 
-st.title("Hi I'm Tim 🧔‍♂️ I would love to learn a new topic from you 😁")
+st.title("Hi I'm Jake 🧔‍♂️ I would love to learn a new topic from you 😁")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "expert", "content": "You are Jake, you are supposed to act as a expert who is trying to\
                                      learn a new topic from the user, you have no knowledge regarding that topic your only role \
