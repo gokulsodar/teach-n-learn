@@ -54,11 +54,11 @@ CHARACTER_PROMPTS = {
 
 
 
-
+from pydantic_ai.providers.groq import GroqProvider
 def get_groq_response(prompt, character):
     try:
         groq_api_key=st.secrets["api_key"]
-        model = GroqModel('llama-3.3-70b-versatile',api_key=groq_api_key)
+        model = GroqModel('llama-3.3-70b-versatile',provider=GroqProvider(api_key=groq_api_key))
 
         agent = Agent(
             model,  
